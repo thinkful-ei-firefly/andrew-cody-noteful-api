@@ -1,7 +1,7 @@
 {
-  "name": "express-boilerplate",
+  "name": "andrew-cody-noteful-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "8-30 / Andrew Jessen-Tyler and Cody Oberholtzer / Add Relationships to Blogful",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
@@ -11,7 +11,7 @@
     "dev": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrew Jessen-Tyler, Cody Oberholtzer",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
