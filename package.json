@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "8-30 / Andrew Jessen-Tyler and Cody Oberholtzer / Add Relationships to Blogful",
   "main": "index.js",
+  "engines": {
+    "node": "12.4.0"
+  },
   "scripts": {
     "test": "mocha --require test/setup.js",
     "start": "node src/server.js",
