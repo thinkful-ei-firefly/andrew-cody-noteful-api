@@ -4,5 +4,5 @@ module.exports = {
   DB_URL:
     process.env.NODE_ENV == 'development' || 'test'
       ? process.env.DB_URL
-      : process.env.postgres.DB_URL
+      : process.env.DATABASE_URL
 }
