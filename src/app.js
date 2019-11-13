@@ -14,7 +14,8 @@ const morganOption =
 
 app.use(morgan(morganOption))
 app.use(helmet())
-app.use(cors())
+cors({credentials: true, origin: true})
+// app.use(cors())
 // app.use(auth)
 
 app.use('/folders', foldersRouter)
