@@ -13,6 +13,7 @@
     "deploy": "git push heroku master",
     "dev": "nodemon src/server.js",
     "migrate": "postgrator --config postgrator-config.js",
+    "migrate:production": "env DATABASE_URL=$(heroku config:get DATABASE_URL) npm run migrate",
     "seed": "psql -d noteful -f ./seeds/seed.folders.sql"
   },
   "keywords": [],
