@@ -1,4 +1,5 @@
 // could pull in url's from .env
+require('dotenv').config()
 
 module.exports = {
   driver: 'pg',
