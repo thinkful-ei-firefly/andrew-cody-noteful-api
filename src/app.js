@@ -11,11 +11,16 @@ const app = express()
 
 const morganOption = { NODE_ENV } === 'production' ? 'tiny' : 'common'
 
-app.use(cors({origin: 'https://noteful.krill.now.sh'}))
+
 app.use(morgan(morganOption))
+app.use(cors())
 app.use(helmet())
 // cors({credentials: true, origin: true})
 // app.use(auth)
+
+app.get('/', (req, res) => {
+  res.send('Noteful Api');
+});
 
 app.use('/folders', foldersRouter)
 app.use('/notes', notesRouter)
