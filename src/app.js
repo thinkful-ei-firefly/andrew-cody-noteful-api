@@ -19,8 +19,9 @@ app.use(helmet())
 // app.use(auth)
 
 app.get('/', (req, res) => {
-  res.send('Noteful Api');
+  res.send(`Noteful Api DB URL: ${process.env.DATABASE_URL}`);
 });
+
 
 app.use('/folders', foldersRouter)
 app.use('/notes', notesRouter)
