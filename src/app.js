@@ -19,7 +19,7 @@ app.use(helmet())
 // app.use(auth)
 
 app.get('/', (req, res) => {
-  res.send(`Noteful Api DB URL: ${process.env.DATABASE_URL}`);
+  res.send(`Noteful Api`);
 });
 
 
